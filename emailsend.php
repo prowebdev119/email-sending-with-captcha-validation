@@ -57,17 +57,14 @@ if ($responseKeys["success"] = 1) {*/
         $fromName = 'ONEMAK Tickets';
 
         // Subject
-        $emailSubject = 'Ticket Request Submitted by ' . $fromemail;
+        $emailSubject = $regarding ;
 
         // Message 
-        $htmlContent = '<h2>Ticket Request Submitted</h2>
-                    <p><b>Priority:</b> ' . $priority . '</p>
-                    <p><b>Email:</b> ' . $fromemail . '</p>
-                    <p><b>Regarding:</b> ' . $regarding . '</p>
+        $htmlContent = '<p><b>Priority:</b> ' . $priority . '</p>
                     <p><b>Description:</b><br/>' . $description . '</p>';
 
         // Header for sender info
-        $headers = "From: $fromName" . " <" . $from . ">";
+        $headers = "From: $fromName" . " <" . $fromemail . ">";
 
         if (!empty($uploadedFile) && file_exists($uploadedFile)) {
 
