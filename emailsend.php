@@ -53,7 +53,7 @@ if ($responseKeys["success"] = 1) {*/
         $toEmail = $to;
         $fromemail = $from;
         // Sender
-        $from = 'ticket@olha.telsnet.com.ng';
+        // $from = 'ticket@olha.telsnet.com.ng';
         $fromName = 'ONEMAK Tickets';
 
         // Subject
