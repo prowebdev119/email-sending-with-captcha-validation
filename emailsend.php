@@ -140,6 +140,7 @@ function check_all_inputs($from, $priority, $regarding, $description)
     }
     return $errors;
 }
+
 function test_input($data)
 {
     $data = trim($data);
