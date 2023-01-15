@@ -8,16 +8,16 @@ if($_GET['la']){
 
 switch($_SESSION['la']){
 	 case "en":
-		require('./lang/en.php');		
+		require('./lang/en.php');
 	break;
 	case "fr":
-		require('./lang/fr.php');		
+		require('./lang/fr.php');
 	break;
 	case "de":
-		require('./lang/de.php');		
-	break;	
-	default: 
-		require('./lang/de.php');		
+		require('./lang/de.php');
+	break;
+	default:
+		require('./lang/de.php');
 }
 
 
@@ -46,7 +46,6 @@ function submitUserForm()
     }
     return true;
 }
- 
 function verifyCaptcha(token) {
     recaptcha_response = token;
     document.getElementById('g-recaptcha-error').innerHTML = '';
